@@ -1,4 +1,5 @@
 ####				BASIC SCIKIT-LEARN (LINEAR REGRESSION)              ####
+#### Source: http://scikit-learn.org/stable/modules/linear_model.html#ordinary-least-squares
 
 # linear regression: finding a line of best fit to represent the current and future values
 
@@ -11,7 +12,7 @@ Y = [3, 7, 11, 15]
 reg = linear_model.LinearRegression()
 reg.fit(X, Y)
 print "\n\n\tfor input array:", X, "and output array:", Y
-print "\n\n\tthe set of coefficients respectively are:", reg.coef_
+print "\n\n\tthe set of coefficients respective to features are:", reg.coef_
 print "\tand the intercept (constant) is", reg.intercept_
 
 X_ = [[4], [5], [10], [100]]
