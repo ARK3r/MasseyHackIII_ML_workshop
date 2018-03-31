@@ -38,6 +38,7 @@ for _ in xrange(NUM_OF_TESTS):
         	bestparams = parameters
         	# considered solved if the agent lasts the max number of episodes
 		if reward == NUM_OF_EPISODES:
+			print "\n\n\tat run", _ + 1, "max reward was found!"
 			break
 
 # uncomment to save a video of the episode that is going to happen
@@ -51,3 +52,5 @@ while not done:
 	action = 0 if np.matmul(parameters, observation) < 0 else 1
 	observation, reward, done, info = env.step(action)
 	rewardAll += reward
+
+print "\n\ttotal reward of the run displayed is:", rewardAll,"\n"
